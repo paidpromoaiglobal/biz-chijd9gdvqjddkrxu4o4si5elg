@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1A6B8A">
+<title>Dentpark – Trusted Dental Clinic in Hari Nagar Ashram, New Delhi | Dr. Vedika</title>
+<meta name="description" content="Visit Dentpark in Hari Nagar Ashram, New Delhi for expert dental care including tooth extraction, root canal treatment, cleaning &amp; more. Rated 4.9/5 by 183+ patients. Call 092059 74990 to book your appointment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#1e293b;background:#fff;-webkit-font-smoothing:antialiased}
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.45);text-decoration:none;transition:transform .2s}.wa-float:hover{transform:scale(1.1)}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(255,255,255,0.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.06);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:60px;transition:box-shadow .3s}
+.nav-brand{font-weight:700;font-size:1rem;color:#1A6B8A;max-width:55%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-cta{background:#1A6B8A;color:#fff;padding:9px 20px;border-radius:50px;text-decoration:none;font-size:.85rem;font-weight:600;white-space:nowrap;flex-shrink:0}
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero-parallax{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=1600&q=85&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(160deg,#1A6B8Aee 0%,#1A6B8A99 50%,#E8F4F8bb 100%)}
+.hero-inner{position:relative;z-index:2;padding:100px 24px 60px;color:#fff;max-width:680px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);padding:6px 16px;border-radius:50px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:700;line-height:1.15;margin-bottom:16px;letter-spacing:-.02em}
+.hero p{font-size:clamp(1rem,2.5vw,1.15rem);opacity:.88;line-height:1.65;margin-bottom:32px;max-width:520px;margin-left:auto;margin-right:auto}
+.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:#F4A836;color:#fff;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem;transition:opacity .2s}
+.btn-ghost{background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.5);color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:500;font-size:.95rem}
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;box-shadow:0 4px 24px rgba(0,0,0,0.08)}
+.stat{padding:22px 16px;text-align:center;border-right:1px solid #f1f5f9}
+.stat:last-child{border:none}
+.stat-n{font-size:1.7rem;font-weight:700;color:#1A6B8A;line-height:1}
+.stat-l{font-size:.72rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.07em;margin-top:4px}
+/* SECTIONS */
+section{padding:64px 5vw}
+.container{max-width:960px;margin:0 auto}
+.sec-head{text-align:center;margin-bottom:40px}
+.sec-head h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:#0f172a;margin-bottom:8px}
+.sec-head p{color:#64748b;font-size:.95rem}
+/* ABOUT */
+.about-wrap{display:grid;grid-template-columns:1fr;gap:32px}
+@media(min-width:768px){.about-wrap{grid-template-columns:1fr 1fr;align-items:center}}
+.about-img-wrap{position:relative;border-radius:16px;overflow:hidden}
+.about-img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.about-badge{position:absolute;bottom:16px;left:16px;background:#1A6B8A;color:#fff;padding:10px 16px;border-radius:8px;font-size:.82rem;font-weight:600}
+.about-text h2{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:700;color:#0f172a;margin-bottom:16px;text-align:left}
+.about-text p{color:#475569;line-height:1.8;margin-bottom:12px;font-size:.95rem}
+.hl-list{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:6px}
+.hl-list li{padding:8px 12px 8px 32px;position:relative;background:#f8fafc;border-radius:6px;color:#334155;font-size:.88rem}
+.hl-list li:before{content:'✓';color:#F4A836;position:absolute;left:10px;font-weight:700}
+/* SERVICES */
+.services-bg{background:#f8fafc}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:480px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{background:#fff;border-radius:12px;padding:24px;border:1px solid #e2e8f0;position:relative;transition:transform .2s,box-shadow .2s}
+.svc-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.07)}
+.svc-dot{width:36px;height:36px;background:#1A6B8A18;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:#1A6B8A;font-size:1.1rem}
+.svc-card h3{font-weight:600;color:#0f172a;margin-bottom:8px;font-size:.97rem}
+.svc-card p{color:#64748b;font-size:.87rem;line-height:1.6}
+/* PARALLAX STRIP */
+.parallax-strip{position:relative;min-height:320px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.parallax-strip-bg{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1200&q=80&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform}
+.parallax-strip-overlay{position:absolute;inset:0;background:#1A6B8Add}
+.parallax-strip-content{position:relative;z-index:2;text-align:center;color:#fff;padding:48px 24px}
+.parallax-strip-content h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;margin-bottom:12px}
+.parallax-strip-content p{opacity:.85;max-width:560px;margin:0 auto 28px;font-size:1rem}
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;transition:opacity .3s}
+.gallery-grid img:hover{opacity:.88}
+/* REVIEWS */
+.reviews-bg{background:#0f172a}
+.rv-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:36px}
+@media(min-width:640px){.rv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
+.rv-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:22px}
+.rv-stars{color:#fbbf24;font-size:1rem;margin-bottom:10px}
+.rv-text{color:rgba(255,255,255,.72);font-size:.9rem;line-height:1.7;font-style:italic;margin-bottom:14px}
+.rv-author{color:rgba(255,255,255,.5);font-size:.82rem;font-weight:600}
+/* CONTACT */
+.contact-wrap{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:768px){.contact-wrap{grid-template-columns:1fr 1fr}}
+.contact-info{display:flex;flex-direction:column;gap:16px}
+.ci-item{display:flex;gap:14px;align-items:flex-start}
+.ci-icon{width:42px;height:42px;background:#1A6B8A15;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.ci-item h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:#94a3b8;margin-bottom:4px}
+.ci-item a{color:#1A6B8A;text-decoration:none;font-weight:600;font-size:.95rem}
+.ci-item p{color:#475569;font-size:.9rem}
+.contact-cta{background:#1A6B8A;border-radius:16px;padding:32px;color:#fff;display:flex;flex-direction:column;gap:16px;justify-content:center}
+.contact-cta h3{font-size:1.3rem;font-weight:700}
+.contact-cta p{opacity:.8;font-size:.9rem}
+.cta-btn-white{background:#fff;color:#1A6B8A;padding:13px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.92rem;display:inline-block;text-align:center}
+.cta-btn-outline{border:1.5px solid rgba(255,255,255,.5);color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-size:.92rem;display:inline-block;text-align:center;margin-top:8px}
+footer{background:#020617;color:#475569;text-align:center;padding:22px 16px;font-size:.8rem}
+</style>
+</head>
+<body>
+<nav>
+  <span class="nav-brand">Dentpark</span>
+  <a href="https://wa.me/919205974990?text=Hi%20Dentpark!%20I%20found%20your%20clinic%20online%20and%20would%20like%20to%20book%20a%20dental%20appointment.%20Could%20you%20please%20let%20me%20know%20your%20available%20slots%3F" class="nav-cta">💬 WhatsApp</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-parallax" id="hp"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">⭐ 4.9/5 &nbsp;·&nbsp; Google Rated</div>
+    <h1>Your Smile, Our Passion — Expert Dental Care You Can Trust</h1>
+    <p>Experience gentle, meticulous dental treatment with a team that truly cares about your oral health.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/919205974990?text=Hi%20Dentpark!%20I%20found%20your%20clinic%20online%20and%20would%20like%20to%20book%20a%20dental%20appointment.%20Could%20you%20please%20let%20me%20know%20your%20available%20slots%3F" class="btn-primary">Book Your Appointment Today</a>
+      <a href="tel:092059 74990" class="btn-ghost">📞 Call Now</a>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-n">4.9/5</div><div class="stat-l">Rating</div></div>
+  <div class="stat"><div class="stat-n">Trusted</div><div class="stat-l">By Locals</div></div>
+  <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Trusted</div></div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-img-wrap">
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEH2UNiAW5KLLIZME8tSzX4aWLqOpqtGMwKDafRaOdox-HU245tqxweGX8x-w-eqZAgDYJCV4rK2PYf-mNBMfSd5uJBiX1nWm4J_SOr9ssDo2MbcYCc8hNfVr8JRVzlk1YxFUlkHzvSntbL3iMlLfS6mlVyEAkeQcX4geI4Gq__G1FefM2KjHerqzKFhPI8zDSLmniU_OkRG2GwckGpDSeVITOhNbcgAKGwSFs6QbHQsk7UubPAGqkUsl5hSHDhjRS4BO7YnoUBMe38LUPwssYa-WLHQD5V0DHmxriUi2dz3VQ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Dentpark" class="about-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=1600&q=85&fit=crop&auto=format'">
+        <div class="about-badge">✓ Verified Business</div>
+      </div>
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>Dentpark is a trusted dental clinic located in Hari Nagar Ashram, New Delhi, dedicated to providing comprehensive and compassionate dental care to patients of all ages. Led by Dr. Vedika and supported by a warm, skilled team, we combine clinical excellence with a patient-first approach that makes every visit comfortable and reassuring. With a stellar rating of 4.9 out of 5 from over 183 satisfied patients, we have built our reputation on transparency, precision, and genuine care.</p><p>At Dentpark, we believe that a healthy smile can transform your confidence and quality of life. Whether you need a routine check-up, a complex extraction, or a root canal treatment, our team walks you through every step of the procedure so you always feel informed and at ease. Conveniently situated opposite Jeewan Hospital in Bhagwan Nagar Phase 2, we welcome patients six days a week and are committed to making world-class dental care accessible right in your neighbourhood.</p>
+        <ul class="hl-list"><li>⭐ Rated 4.9/5 by 183+ happy patients — one of New Delhi's most trusted dental clinics</li><li>👩‍⚕️ Led by Dr. Vedika, known for her meticulous approach and patient-friendly explanations</li><li>🕐 Open 6 days a week with morning &amp; evening slots for your convenience</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-bg">
+  <div class="container">
+    <div class="sec-head"><h2>Our Services</h2><p>What we offer</p></div>
+    <div class="svc-grid"><div class="svc-card"><div class="svc-dot">🏥</div><h3>Dental Consultation &amp; Check-up</h3><p>Comprehensive oral examinations to assess your dental health and plan the right course of treatment tailored to your needs.</p></div><div class="svc-card"><div class="svc-dot">💊</div><h3>Tooth Extraction</h3><p>Safe and precise extraction of damaged, infected, or wisdom teeth including third molar extractions, performed with minimal discomfort.</p></div><div class="svc-card"><div class="svc-dot">🩺</div><h3>Root Canal Treatment (RCT)</h3><p>Advanced root canal therapy to save infected or severely damaged teeth, carried out with meticulous care for a pain-free recovery.</p></div><div class="svc-card"><div class="svc-dot">📋</div><h3>Dental Cleaning &amp; Scaling</h3><p>Professional cleaning to remove plaque, tartar, and stains, keeping your gums healthy and your smile fresh.</p></div><div class="svc-card"><div class="svc-dot">💡</div><h3>Restorative Dentistry</h3><p>High-quality fillings, crowns, and other restorative procedures to repair and strengthen damaged teeth and restore your natural bite.</p></div><div class="svc-card"><div class="svc-dot">⚕️</div><h3>Cosmetic Dental Treatments</h3><p>Smile enhancement procedures designed to improve the appearance of your teeth and boost your confidence every day.</p></div></div>
+  </div>
+</section>
+
+<div class="parallax-strip">
+  <div class="parallax-strip-bg" id="ps"></div>
+  <div class="parallax-strip-overlay"></div>
+  <div class="parallax-strip-content">
+    <h2>Ready to Get Started?</h2>
+    <p>Gate No 5, 140/4, opp. Jeewan Hospital, Bhagwan Nagar, Phase 2, Hari Nagar Ashram, New Delhi, Delhi 110014, India</p>
+    <a href="https://wa.me/919205974990?text=Hi%20Dentpark!%20I%20found%20your%20clinic%20online%20and%20would%20like%20to%20book%20a%20dental%20appointment.%20Could%20you%20please%20let%20me%20know%20your%20available%20slots%3F" style="background:#F4A836;color:#fff;padding:13px 32px;border-radius:8px;text-decoration:none;font-weight:700">💬 WhatsApp Us Now</a>
+  </div>
+</div>
+
+<section><div class="container"><div class="sec-head"><h2>Our Clinic</h2><p>A look inside</p></div><div class="gallery-grid"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEH2UNiAW5KLLIZME8tSzX4aWLqOpqtGMwKDafRaOdox-HU245tqxweGX8x-w-eqZAgDYJCV4rK2PYf-mNBMfSd5uJBiX1nWm4J_SOr9ssDo2MbcYCc8hNfVr8JRVzlk1YxFUlkHzvSntbL3iMlLfS6mlVyEAkeQcX4geI4Gq__G1FefM2KjHerqzKFhPI8zDSLmniU_OkRG2GwckGpDSeVITOhNbcgAKGwSFs6QbHQsk7UubPAGqkUsl5hSHDhjRS4BO7YnoUBMe38LUPwssYa-WLHQD5V0DHmxriUi2dz3VQ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Dentpark" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEGY_OlUBYl7k_wPsu3vEm3KlofEh2eAIllJn9_T2Yp8pDeCptkR8wOJVJ02c-UxAt82Ue36RwECODjz32cndk4XlU3tg5pbf11MSSNdpR0HZYRk4uyfZWqkN2Mn_u5y-Gm_3q6yVRyqV3FAz5O8OT-z0Hvg-dyJwwBixI_wbVhlnU5ilSGytBHkwY9XPOqGicnG2vDPxX-aBjcQcLQlxtzAwJzwmR5M9WONIVV8EdfNqGz0KiG26N0o5zYxzDYgWLo4wK_l0u4mlIokKf_i_nrt6sE9dVlxqjnhYPQfaUCpu-3pwfbQ5X5bbokMFid4ajb165BwBWu62OncSpX2EDpaEC8tkepb_19bxptBSUx4mTzbTYkUW5tQdUK2aORjcS7-_v-rxqN29YIWfQAAtCI16-4jgz8wpTr7lCu9d3AGFWJY&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Dentpark" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEH9D6vBcT1kYN4sk5VnaHPCZD6n2JiE1iWnQF1LftYYQOVgpLv9fcbdVt0o0FIGEZN9S_KhOomHQJeHvwD68hpcinbkCe9ghH-N7EtoUsZC-n8KKgOCqQgUH20SONJpnyXPmhAuoSM5oEoBPj_meekRXFleNmw9ZcrFFzIeC9uFbzYsCk6JDBzdcVQG-zkW2TgtYrJ6aP8KTED6ijzuxJaHmfcR89hwt4M_nVv6f6e6KuFu2JL37whoF7F_i_NXkD8CKfrrfe9hdETliST6Uu5WPNc8sCKnqeiKjdJjWyLDU2pnMVqAFdkbDn6zs3C2f-vgjXh8gyWoUYPXo1xAhd4KMr4cHlGiZaotpgWmy3pqZWfIsSdvoud4Z1UOOLq2UrckOF2fhHsq94VnG2hWupx95PIeie67wwEGk3AIq7Spv7yI&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Dentpark" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEGWLkI6ueMwtdYwxc_2z9EVmXyCSF2zw8949sikvt2Icg6z792H6g9co7573TGZH7GLCG821wEFKaaZEqFquI4vfPxjUyJLNGdDZSYRXlhF7sCF7oV2anGWr8fjKmcTOSBSCoTMjeXWORJBa8erpkoEbnFHG15caYNNe929tLZYY3mfslQ-wUIcGcXaujdOCOQk_XEB_asRQmr8EdlbJ892QmFEYbzOVLuQ_o_LnveNfrA0_k7xoBkv89oRjhO4mIapIL-UZ3eA9tUgK_AIzd34z0EjTMzd5Qkf7yv0E4x20JWejKmQr7lqC7nLCRteG1mjunlgNfEfDE5oyB73-tSAmwuagRKDspq94vYZAPyqpZ4oQSrKkCa9cYBPQJebhPSB5LWjMP-auNaDrNuBslc_442eC33tx8v_W87Hi9GXGw&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Dentpark" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEFooIo5hviDZF5V0QTHmb3dDWauOkvf23jfQzENrnZ10k82LYBDBL-hDfXfpkHs7a8RGKTL2wMWP2icAeVpOoRIShsmOT-wn87hfGYc1YhObYlyi1WfxWOZJ6IAvGeuIPC9Wa4CFpOaLSMi87qA19vtMn3iEQ1G5unMOSx_SZtx2-u5gHqbiGtNYP_PNBU9TZzlw7ULW_xubbMii4PK8lXyQ0ZW8MzHVgTGz2z2-33hTwowYj-dbAlrYOAncdNiSCUdJ9i0VTzmAD68CqNdImrLHoE_hobYc41TKA5EMKCzltcprycYlQrGwFlix-KrS84Sdyp7MU5j8kl52--5oveKxwgj-Xv0hdyoeBLG3k7xjTfuV-VpTqrFcpEhviiua--IL4vCnYcrhNBxQ-OiKw4WFqX3leyFBVk_K3qqFXy5YuKr&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Dentpark" loading="lazy" onerror="this.parentElement.remove()"></div></div></section>
+
+<section class="reviews-bg">
+  <div class="container">
+    <div class="sec-head"><h2 style="color:#fff">What Clients Say</h2><p style="color:rgba(255,255,255,.5)">Real reviews from real patients</p></div>
+    <div class="rv-grid"><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"My overall experience was amazing. The doctor and the staff were very welcoming as well as very respectful. Dr Vedika is very meticulous in her job and her support staff Dharmender and Mariam are very professional. Highly recommend!"</p><div class="rv-author">— Noama Fatima</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"I recently visited for a dental treatment and the experience was very positive. The clinic was clean, the staff were friendly, and the dentist explained every step clearly. I couldn't have asked for better care."</p><div class="rv-author">— Gokul Prasad Prajapati</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"I have been visiting Dentpark for almost a month for my 3rd molar extraction and an RCT. Dr Vedika is very meticulous in her job and her support staff are always there to make you feel comfortable throughout."</p><div class="rv-author">— Khangebam Niljit</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"My experience is amazing — both the doctor and staff are very nice. I highly recommend this clinic for any dental related problems."</p><div class="rv-author">— Kajal Ali</div></div><div class="rv-card"><div class="rv-stars">★★★★☆</div><p class="rv-text">"I highly recommend this clinic! The staff are very friendly and thorough. The doctor was extremely detailed in her explanations about my next steps, which made me feel very confident about my treatment."</p><div class="rv-author">— Shikna Marchshik</div></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sec-head"><h2>Contact Us</h2><p>We're here to help</p></div>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="ci-item"><div class="ci-icon">📞</div><div><h4>Phone</h4><a href="tel:092059 74990">092059 74990</a></div></div>
+        <div class="ci-item"><div class="ci-icon">📍</div><div><h4>Address</h4><p>Gate No 5, 140/4, opp. Jeewan Hospital, Bhagwan Nagar, Phase 2, Hari Nagar Ashram, New Delhi, Delhi 110014, India</p></div></div>
+        <div class="ci-item"><div class="ci-icon">🕐</div><div><h4>Hours</h4><p>Monday: 10:00 AM – 2:00 PM, 4:00 – 9:00 PM | Tuesday: 10:00 AM – 2:00 PM, 4:00 – 9:00 PM | Wednesday: 10:00 AM – 2:00 PM, 4:00 – 9:00 PM | Thursday: 10:00 AM – 2:00 PM, 4:00 – 9:00 PM | Friday: Closed | Saturday: 10:00 AM – 2:00 PM, 4:00 – 9:00 PM | Sunday: 10:00 AM – 2:00 PM, 4:00 – 9:00 PM</p></div></div>
+        <div class="ci-item"><div class="ci-icon">🗺️</div><div><h4>Maps</h4><a href="https://maps.google.com/?cid=6375612494935248477" style="color:#1A6B8A;text-decoration:none;font-weight:600;font-size:.95rem">View on Google Maps</a></div></div>
+      </div>
+      <div class="contact-cta">
+        <h3>Book an Appointment</h3>
+        <p>Get in touch with us today. We respond within minutes on WhatsApp.</p>
+        <a href="https://wa.me/919205974990?text=Hi%20Dentpark!%20I%20found%20your%20clinic%20online%20and%20would%20like%20to%20book%20a%20dental%20appointment.%20Could%20you%20please%20let%20me%20know%20your%20available%20slots%3F" class="cta-btn-white">💬 Chat on WhatsApp</a>
+        <a href="tel:092059 74990" class="cta-btn-outline">📞 092059 74990</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Dentpark · Gate No 5, 140/4, opp. Jeewan Hospital, Bhagwan Nagar, Phase 2, Hari Nagar Ashram, New Delhi, Delhi 110014, India</footer>
+<a href="https://wa.me/919205974990?text=Hi%20Dentpark!%20I%20found%20your%20clinic%20online%20and%20would%20like%20to%20book%20a%20dental%20appointment.%20Could%20you%20please%20let%20me%20know%20your%20available%20slots%3F" class="wa-float" title="Chat on WhatsApp" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script>
+// Parallax on scroll (desktop only)
+if(window.innerWidth > 768){
+  const hp=document.getElementById('hp'),ps=document.getElementById('ps');
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY;
+    if(hp)hp.style.transform='translateY('+y*.3+'px)';
+    if(ps){const r=ps.closest('.parallax-strip').getBoundingClientRect();ps.style.transform='translateY('+(r.top*.2)+'px)'}
+  },{passive:true});
+}
+</script>
+</body></html>
